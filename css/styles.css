@@ -1,117 +1,129 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
 body {
-  line-height: 1.6;
-  background: #f9f9fb;
-  color: #333;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  color: #000;
+  background: #fff;
 }
-
-header {
-  background: #1a202c;
-  color: #fff;
-  padding: 1.5rem;
-  text-align: center;
+header,
+footer {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-header h1 {
-  font-size: 2rem;
-}
-
-nav {
-  margin-top: 1rem;
-}
-
-nav a {
-  margin: 0 1rem;
-  color: #cbd5e0;
+header nav a,
+footer a {
+  margin: 0 10px;
   text-decoration: none;
+  color: #1a73e8;
+  font-weight: 500;
 }
-
 .hero {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: #edf2f7;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #f7f9fc;
 }
-
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.hero-text {
+  flex: 1;
+  max-width: 500px;
 }
-
-.hero p {
-  font-size: 1.2rem;
-  color: #555;
-  max-width: 600px;
-  margin: auto;
+.hero-text h1 {
+  font-size: 32px;
 }
-
-.btn {
+.hero-text p {
+  margin: 20px 0;
+  color: #6c757d;
+}
+.hero-buttons a {
   display: inline-block;
-  margin-top: 2rem;
-  padding: 0.75rem 2rem;
-  background: #3182ce;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  background: #1a73e8;
+}
+.hero-logos img {
+  width: 50px;
+  margin: 10px;
+}
+.section {
+  text-align: center;
+  padding: 60px 20px;
+}
+.section h2 {
+  font-size: 28px;
+}
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+.feature-box {
+  max-width: 250px;
+  text-align: left;
+}
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin: 60px 0;
+}
+.price-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 280px;
+  text-align: left;
+}
+.price-card h1 {
+  font-size: 48px;
+  margin: 0;
+}
+.form-section {
+  background: #0b1536;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+}
+.contact-box,
+.form-box {
+  max-width: 400px;
+}
+.form-box form {
+  display: flex;
+  flex-direction: column;
+}
+.form-box input,
+.form-box textarea,
+.form-box select {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.form-box button {
+  padding: 10px;
+  background: #1a73e8;
   color: #fff;
   border: none;
   border-radius: 5px;
-  text-decoration: none;
-  transition: background 0.3s ease;
 }
-
-.btn:hover {
-  background: #2b6cb0;
-}
-
-.features,
-.pricing {
-  padding: 4rem 2rem;
-  max-width: 1000px;
-  margin: auto;
-  text-align: center;
-}
-
-.features h3,
-.pricing h3 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-.feature-list,
-.pricing-plans {
-  display: flex;
+footer {
+  background: #f8f9fa;
   flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
+  font-size: 14px;
 }
-
-.feature,
-.plan {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-  flex: 1 1 250px;
-  max-width: 300px;
-}
-
-.footer {
-  text-align: center;
-  padding: 2rem;
-  background: #1a202c;
-  color: #cbd5e0;
-}
-
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 2rem;
-  }
-
-  .feature,
-  .plan {
-    max-width: 100%;
-  }
+footer div {
+  margin: 10px 20px;
 }
