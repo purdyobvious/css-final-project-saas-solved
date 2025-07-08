@@ -127,3 +127,70 @@ footer {
 footer div {
   margin: 10px 20px;
 }
+.section-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #6c757d;
+  max-width: 600px;
+  margin: 10px auto 40px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+
+.step {
+  text-align: center;
+  position: relative;
+  flex: 1;
+}
+
+.step::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -50%;
+  width: 100%;
+  height: 2px;
+  background-color: #e6f0ff;
+  z-index: 0;
+}
+
+.step:first-child::before {
+  display: none;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: #f0f6ff;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.circle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #1a73e8;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.label {
+  margin-top: 10px;
+  font-weight: 500;
+}
