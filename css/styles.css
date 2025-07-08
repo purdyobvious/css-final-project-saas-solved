@@ -11,11 +11,14 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
+header {
+  background-color: #f6f8fa;
+}
 header nav a,
 footer a {
   margin: 0 10px;
   text-decoration: none;
-  color: #1a73e8;
+  color: #677788;
   font-weight: 500;
 }
 .hero {
@@ -24,7 +27,7 @@ footer a {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background: #f7f9fc;
+  background-image: url("/assets/bg/background-top.svg");
 }
 .hero-text {
   flex: 1;
@@ -53,6 +56,9 @@ footer a {
 .section {
   text-align: center;
   padding: 60px 20px;
+}
+.section p {
+  color: #677788;
 }
 .section h2 {
   font-size: 28px;
@@ -193,4 +199,15 @@ footer div {
 .label {
   margin-top: 10px;
   font-weight: 500;
+}
+.main-logo {
+  width: 6rem;
+}
+.footer-logo {
+  width: 4rem;
+}
+
+.company-footer {
+  display: flex;
+  flex-direction: column;
 }
