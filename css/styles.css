@@ -94,35 +94,81 @@ footer a {
 }
 .form-section {
   background: #0b1536;
-  color: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
-  padding: 60px 20px;
+  padding: 40px;
 }
-.contact-box,
-.form-box {
+.form-container {
+  background-color: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
   max-width: 400px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
-.form-box form {
+
+.form-container h2 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.form-row {
   display: flex;
-  flex-direction: column;
+  gap: 10px;
 }
-.form-box input,
-.form-box textarea,
-.form-box select {
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
 }
-.form-box button {
-  padding: 10px;
-  background: #1a73e8;
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.checkbox-container input {
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.checkbox-container a {
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #007bff;
   color: #fff;
+  padding: 12px;
+  margin-top: 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #005fcc;
 }
 footer {
   background: #f8f9fa;
@@ -229,4 +275,12 @@ footer div {
   width: 50px;
   height: 50px;
   margin-bottom: 10px;
+}
+
+.contact-box {
+  color: white;
+  padding: 20px;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
 }

@@ -124,12 +124,19 @@
 
     <section class="form-section">
       <div class="contact-box">
-        <h3>Hire Us</h3>
+        <h2>Hire Us</h2>
+
         <p>Whatever your goal – we will get you there</p>
-        <blockquote>
-          “I love Front! Love the ease of use, I love the fact that I have total
-          creative freedom...”
-        </blockquote>
+        <p>
+              <hr width="100%" size="2">
+              <br>
+          <i
+            >“I love Front! Love the ease of use, I love the fact that I have
+            total creative freedom...”</i
+          >
+        </p>
+
+        <p></p>
         <p><strong>Charlotte Moore</strong><br />Head of Commerce, Slack</p>
         <img
           src="assets/images/man_one.jpg"
@@ -137,21 +144,47 @@
           style="border-radius: 50%"
         />
       </div>
-      <div class="form-box">
+      <div class="form-container">
+        <h2>Fill out the form and we'll be in touch as soon as possible</h2>
         <form>
-          <input type="text" placeholder="First name" />
-          <input type="text" placeholder="Last name" />
-          <input type="email" placeholder="Email" />
-          <select>
-            <option>Country</option>
-          </select>
-          <input type="text" placeholder="Budget" />
-          <textarea placeholder="Tell us more about your project..."></textarea>
-          <label
-            ><input type="checkbox" /> Receive occasional emails from
-            Front</label
-          >
-          <button type="submit">Submit Form</button>
+          <div class="form-row">
+            <input type="text" placeholder="First name" required />
+            <input type="text" placeholder="Last name" required />
+          </div>
+          <input type="email" placeholder="Email" required />
+          <div class="form-row">
+            <select required>
+              <option disabled selected>Budget</option>
+              <option>Less than $1,000</option>
+              <option>$1,000 - $5,000</option>
+              <option>Over $5,000</option>
+            </select>
+            <select required>
+              <option disabled selected>Country</option>
+              <option>USA</option>
+              <option>UK</option>
+              <option>Canada</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <textarea
+            placeholder="Tell us more about your project, needs, and timeline, please..."
+          ></textarea>
+
+          <div class="checkbox-container">
+            <input type="checkbox" id="marketing" />
+            <label for="marketing">
+              Yes, I'd like to receive occasional marketing emails from Front. I
+              have the right to opt out at any time.
+            </label>
+          </div>
+
+          <div class="checkbox-container" style="margin-top: 10px">
+            <a href="#">View privacy policy</a>
+            <a href="#">View privacy policy</a>
+          </div>
+
+          <button type="submit" class="submit-button">Submit Form</button>
         </form>
       </div>
     </section>
