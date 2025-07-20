@@ -370,7 +370,3 @@ a:hover {
 .hero-logos img:nth-child(7) {
   animation-delay: 1.2s;
 }
-
-ul#tabs li.address1 {
-  list-style-image: url("assets/images/location-arrow.svg");
-}
