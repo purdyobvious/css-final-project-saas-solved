@@ -104,12 +104,14 @@
     max-width: fit-content;
     padding: 20px;
   }
-  .footer-container {
-  }
 
-  .footer-section {
-    display: block;
-    flex-wrap: wrap;
+  .footer-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .address {
+    display: flex;
+    flex-direction: flex-start;
   }
 }
 

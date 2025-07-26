@@ -282,13 +282,17 @@ textarea {
   display: flex;
   flex-direction: column;
 }
-
-.footer-container {
+.footer {
+  background-color: #f6f8fa;
+  padding: 20px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.footer-container {
   gap: 2rem;
   font-size: small;
+  align-items: center;
 }
 .footer-wrap {
   display: flex;
