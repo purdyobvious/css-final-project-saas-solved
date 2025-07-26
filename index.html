@@ -1,251 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Front</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/b0201ea9e5.js" crossorigin="anonymous"></script>
+    <title>Saas company</title>
   </head>
   <body>
-    <header class="mainheader">
-      <div class="main-logo">
-        <img src="assets/logos/logo-front.svg" alt="main-logo" />
-      </div>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">Features</a>
-        <a href="#">Learn</a>
-        <a href="#">Pricing</a>
-        <a href="#">Hire Us</a>
-        <a
-          href="#"
-          style="
-            background: #1a73e8;
-            color: #fff;
-            padding: 6px 12px;
-            border-radius: 20px;
-          "
-          >Buy Now</a
-        >
-      </nav>
-    </header>
-
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Empowering teams with the freedom</h1>
-        <p>Own the unlimited power of web development</p>
-        <div class="actions">
-          <div class="hero-buttons">
-            <a href="#">Play Video</a>
+    <div class="container">
+      <div id="topSection">
+        <div class="topSectionContent">
+          <header>
+            <div class="logo">
+              <img id="frontLogo" src="./assets/logos/logo-front.svg" alt="Front logo">
+            </div>
+            <nav>
+              <i class="fa-solid fa-bars"></i>
+              <ul id="navList">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Hire us</a></li>
+                <li><a href="#"></a></li>
+              </ul>
+              <a href="#"><button class="navButton">Buy Now</button></a>
+            </nav>
+          </header>
+          <div class="heroSection">
+            <div id="leftPart">
+              <div id="title">
+                <p class="leftPartHeading">Empowering teams with the freedom</p>
+                <p class="leftPartParagraph">Own the unlimited power of the web development</p>
+              </div>
+              <div id="actions">
+                <button class="leftPartButton">
+                  <i id="play-circle" class="fa-solid fa-play"></i>
+                  Play Video
+                </button>
+                <a href="#" class="actionLearnMore">Learn more</a>
+              </div>
+            </div>
+            <div id="rightPart">
+              <div class="asana-logo">
+                <img class="asana" src="./assets/logos/asana.png" alt="">
+              </div>
+              <div class="calendar-logo">
+                <img class="calendar" src="./assets/logos/calendar.png" alt="">
+              </div>
+              <div class="weave-logo">
+                <img class="weave" src="./assets/logos/weave.png" alt="">
+              </div>
+              <div class="paypal-logo">
+                <img class="paypal" src="./assets/logos/paypal.jpg" alt="">
+              </div>
+              <div class="attlasian-logo">
+                <img class="attlasian" src="./assets/logos/atlassian.png" alt="">
+              </div>
+              <div class="googleAds-logo">
+                <img class="googleAds" src="./assets/logos/google-ads.png" alt="">
+              </div>
+              <div class="google-logo">
+                <img class="google" src="./assets/logos/google.png" alt="">
+              </div>
+            </div>
           </div>
-          <a href="#">Learn More</a>
         </div>
       </div>
-      <div class="hero-logos">
-        <img src ="assets/logos/asana.png" alt="logo" />
-        <img src= "assets/logos/atlassian.png" alt="logo" />
-        <img src="assets/logos/google-ads.png" alt="logo" />
-        <img src="assets/logos/calendar.png" alt="logo" />
-        <img src="assets/logos/paypal.jpg" alt="logo" />
-        <img src="assets/logos/weave.png" alt="logo" />
-        <img src="assets/logos/google.png" alt="logo" />
-      </div>
-    </section>
-
-    <section class="section1">
-      <h2>Why front?</h2>
-      <p>
-        Front is an incredibly beautiful, fully responsive, and mobile-first
-        project<br />on the web - it is the starting point for creative sites
-      </p>
-      <div class="steps">
-        <div class="step">
-          <div class="circle"></div>
-          <div class="label">Basic elements</div>
+    </div>
+    <div class="container">
+      <div class="whyFrontSection">
+        <div class="whyFrontTitle">
+          <p class="whyFront">Why Front?</p>
+          <p class="whyFrontParagraph">Front is an incredibly beautiful, fully responsive , and mobile-first projects on the web - it is the starting point for creative sites</p>
         </div>
-        <div class="step">
-          <div class="circle"></div>
-          <div class="label">Components</div>
-        </div>
-        <div class="step">
-          <div class="circle"></div>
-          <div class="label">Combined components</div>
-        </div>
-        <div class="step">
-          <div class="circle"></div>
-          <div class="label">Page layouts</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section2">
-      <div class="pricing-container">
-      <h2>Pricing</h2>
-      <p>No additional costs. Pay for what you use</p>
-
-      <div class="pricing">
-        <div class="price-card">
-         
-          <h1>59 <span style="font-size: 18px; color: #6c757d">/mo</span></h1>
-          <hr />
-          <p>
-            Start your Front business now. 100% guaranteed money back. No
-            questions asked.
-          </p>
-          <div class="hero-buttons">
-          <a href="#" class="hero-buttons">Play Video</a>
+        <div class="mobileBullet">
+          <div class="bulletsAndBars">
+            <div class="bulletCircle"><i class="fa-solid fa-circle"></i></div>
+            <div class="leftWing"><hr class="bar"></div>
+            <div class="bulletCircle"><i class="fa-solid fa-circle"></i></div>
+            <div class="leftWing"><hr class="bar"></div>
+            <div class="bulletCircle"><i class="fa-solid fa-circle"></i></div>
+            <div class="leftWing"><hr class="bar"></div>
+            <div class="bulletCircle"><i class="fa-solid fa-circle"></i></div>
           </div>
-          <p style="color: #6c757d">No credit card required.</p>
+          <ul class="bulletTitles">
+            <li>Basic elements</li>
+            <li>Components</li>
+            <li>Combined components</li>
+            <li>Page layouts</li>
+          </ul>
         </div>
-        <div class="features-grid">
-          <div class="feature-box">
-            <img src="assets/images/components.svg" alt="icon" />
-            <h4>Hundreds of components</h4>
-            <p>
-              Achieve maximum productivity with minimum effort with Front and
-              create robust Limitless products.
+      </div>
+    </div>
+    <div class="container">
+      <div class="pricingTitleGroup">
+        <p class="pricingTitle">Pricing</p>
+        <p class="pricingDescription">No additional costs. Pay for what you use</p>
+      </div>
+      <div class="pricingGroup">
+        <div class="plan">
+          <div class="planHeader">
+            <div class="planPeriod"><span class="price">59</span><span class="month"> / mo</span></div>
+            <hr class="planBar">
+            <p class="planHeaderDescription">Start your Front business now. 100% guaranteed money back. No questions asked.</p>
+          </div>
+          <div class="planFooter">
+            <button class="leftPartButton">
+              <i id="play-circle" class="fa-solid fa-play"></i>
+              Play Video
+            </button>
+            <p class="noccreq">
+              No credit card required.
             </p>
           </div>
-          <div class="feature-box">
-            <img src="assets/images/images.svg" alt="icon" />
-            <h4>Images included</h4>
-            <p>
-              We made custom license for all our premium images in the front.
-            </p>
+        </div>
+        <div class="featureList">
+          <div class="featureGroupOne">
+            <div class="itemOne">
+              <img src="./assets/images/components.svg" alt="Components" class="components">
+              <div class="itemOneTitle">Hundreds of components</div>
+              <p class="itemOneDescription">Achieve maximum productivity with minimum effort with Front and create robust Limitless products.</p>
+            </div>
+            <div class="itemTwo">
+              <img src="./assets/images/cancel.svg" alt="Cancel" class="cancel">
+              <div class="cancelHeading"><div class="itemTwoTitle">Cancel anytime</div><button class="sketch">Sketch</button></div>
+              <p class="itemTwoDescription">If its not for you, just cancel, no hidden costs or fees.s</p>
+            </div>
           </div>
-          <div class="feature-box">
-            <img src="assets/images/cancel.svg" alt="icon" />
-            <h4>Cancel anytime</h4>
-            <p>If it's not for you, just cancel, no hidden costs or fees.</p>
-          </div>
-          <div class="feature-box">
-            <img src="assets/images/moneyback.svg" alt="icon" />
-            <h4>Money back</h4>
-            <p>100% guaranteed money back. No questions asked.</p>
+          <div class="featureGroupTwo">
+            <div class="itemThree">
+              <img src="./assets/images/images.svg" alt="" class="diamonds">
+              <div class="itemThreeTitle">Images included</div>
+              <p class="itemThreeDescription">Images included We made custom license for all our premium images in the front</p>
+            </div>
+            <div class="itemFour">
+              <img src="./assets/images/moneyback.svg" alt="Money back" class="money">
+              <div class="itemFourTitle">Money back</div>
+              <p class="itemFourDescription">100% guarateed money back. No questions asked.</p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="form-section">
-      <div class="contact-box">
-      <div class="hire-us">
-        <h2>Hire Us</h2>
-
-        <p class="textfade">Whatever your goal – we will get you there</p>
-        <p>
-              <hr width="100%" size="2">
-              <br>
-          <i
-            >“I love Front! Love the ease of use, I love the fact that I have
-            total creative freedom...”</i
-          >
-        </p>
+    </div>
+    <div class="container">
+      <div class="hireUsSection">
+        <div class="hireUsLeftPart">
+          <div class="hireUsTop">
+            <div class="hireUsTitle">
+              <p class="hireUs">
+                Hire Us
+              </p>
+              <p class="goal">
+                Whatever your goal - we will get you there
+              </p>
+              <hr class="barWhite">
+            </div>
+            <p class="phrase"><i>“ I love front! I love the ease of use, I love the fact that I have total creative freedom...”</i></p>
+          </div>
+          <div class="hireUsBottom">
+            <div class="person">Charlotte Moore</div>
+            <div class="personTitle">Head of Commercials, Slack</div>
+            <img src="./assets/images/man_one.jpg" alt="Charlotte Moore" class="person-img">
+          </div>
         </div>
-        <div class="charolotte">
-        <p><strong>Charlotte Moore</strong><br />Head of Commerce, Slack</p>
-        <img
-          src="assets/images/man_one.jpg"
-          alt="avatar"
-          style="border-radius: 50%"
-        />
+        <div class="hireUsRightPart">
+          <form action="#">
+            <p class="caption">Fill out the form and we'll be in touch as soon as possible</p>
+            <formgroup class="fullName">
+              <input type="text" id="firstName" placeholder="First name">
+              <input type="text" id="lastName" placeholder="Last name">
+            </formgroup>
+            <formgroup class="formEmail">
+              <input type="email" id="email" placeholder="Email">
+            </formgroup>
+            <formgroup class="row">
+              <select name="budget" id="budget" value="Budget">
+                <i class="fa-solid fa-chevron-down"></i>
+                <option for="budget" value="Budget"><span class="option">Budget</span></option>
+              </select>
+              <select name="country" id="country" value="Country">
+                <i class="fa-solid fa-chevron-down"></i>
+                <option for="country" value="Country" ><span class="option">Country</span></option>
+              </select>
+              </formgroup>
+              <formgroup>
+                <textarea name="tellUsMore" id="tellUsMore" placeholder="Tell us more about your project, needs, and timeline, please..."></textarea>
+              </formgroup>
+              <formgroup class="optional">
+                <input type="checkbox" id="marketing" name="Marketing">
+                <label for="marketing"><p class="marketing">Yes, I'd like to receive occasional marketing emails from Front. I have the right to opt out at any time.</p></label>
+              </formgroup>
+                <div class="privacy">
+                  <a href="#" class="viewPrivacyPolicy">View privacy policy</a>
+                  <a href="#" class="viewPrivacyPolicy second">View privacy policy</a>
+                </div>
+              </formgroup>
+              <button href="#" class="submit">Submit Form</button>
+          </form>
         </div>
       </div>
-      <div class="form-container">
-        <h2>Fill out the form and we'll be in touch as soon as possible</h2>
-        <form>
-          <div class="form-row">
-            <input type="text" placeholder="First name" required />
-            <input type="text" placeholder="Last name" required />
+    </div>
+    <div class="container">
+      <div class="footer">
+        <div class="footergroupone">
+          <div class="col1">
+            <img class="footerLogo" src="./assets/logos/logo-front.svg" alt="Front logo">
+            <div class="address"><i class="fa-solid fa-location-arrow"></i><a href="#" class="address-location"><span class="address-location">153 Williamson Plaza, Maggieberg</span></a></div>
+            <div class="phone"><i class="fa-solid fa-phone"></i><span class="number">+1 (062) 109-9222</span></div>
           </div>
-          <input type="email" placeholder="Email" required />
-          <div class="form-row">
-            <select required>
-              <option disabled selected>Budget</option>
-              <option>Less than $1,000</option>
-              <option>$1,000 - $5,000</option>
-              <option>Over $5,000</option>
-            </select>
-            <select required>
-              <option disabled selected>Country</option>
-              <option>USA</option>
-              <option>UK</option>
-              <option>Canada</option>
-              <option>Other</option>
-            </select>
+        </div>
+        <div class="columns">
+          <div class="footergrouptwo">
+            <div class="col2">
+              <p class="heading">Company</p>
+              <a href="#" class="footera">About</a>
+              <div class="career"><a href="#" class="footera">Career</a><button class="hiring">We're hiring</button></div>
+              <a href="#" class="footera">Blog</a>
+              <a href="#" class="footera">Customers</a>
+              <a href="#" class="footera">Hire us</a>
+            </div>
+            <div class="col3">
+              <p class="heading">Features</p>
+              <a href="#" class="footera">Press</a>
+              <a href="#" class="footera">Release notes</a>
+              <a href="#" class="footera">Integrations</a>
+              <a href="#" class="footera">Pricing</a>
+            </div>
           </div>
-          <textarea
-            placeholder="Tell us more about your project, needs, and timeline, please..."
-          ></textarea>
-
-          <div class="checkbox-container">
-            <input type="checkbox" id="marketing" />
-            <label for="marketing">
-              Yes, I'd like to receive occasional marketing emails from Front. I
-              have the right to opt out at any time.
-            </label>
-          </div>
-
-          <div class="checkbox-container" style="margin-top: 10px">
-            <a href="#">View privacy policy</a>
-            <a href="#">View privacy policy</a>
-          </div>
-
-          <button type="submit" class="submit-button">Submit Form</button>
-        </form>
-      </div>
-    </section>
-<footer class="footer">
-  <div class="footer-container">
-    <div class="address">
-      <ul id="tabs">
-      <img src="assets/logos/logo-front.svg" alt="main-logo" />
-      <li class="address1"><a href="#">153 Williamson Plaza, Maggieberg</a></li>
-      <li class="phone"><a href="tel:+10621099222">+1 (062) 109-9222</a></li>
-      </ul>
+          <div class="footergroupthree">
+            <div class="col4">
+              <p class="heading">Documentation</p>
+              <a href="#" class="footera">Support</a>
+              <a href="#" class="footera">Docs</a>
+              <a href="#" class="footera">Status</a>
+              <a href="#" class="footera">API Reference</a>
+              <a href="#" class="footera">Tech Requirements</a>
+            </div>
+            <div class="col5">
+              <p class="heading">Resources</p>
+              <div class="help"><i class="fa-solid fa-circle-info"></i><a href="#" class="footera">Help</a></div>
+              <div class="account"><i class="fa-solid fa-circle-user"></i><a href="#" class="footera">Your Account</a></div>
+            </div>
+          </div>  
+        </div>
+      </div> 
     </div>
-<div class="footer-wrap">
-    <div class="footer-section">
-      <ul>
-      <h3>Company</h3>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Customers</a></li>
-        <li><a href="#">Hire Us</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-section">
-      <ul>
-      <h3>Features</h3>
-        <li><a href="#">Press</a></li>
-        <li><a href="#">Release notes</a></li>
-        <li><a href="#">Integrations</a></li>
-        <li><a href="#">Pricing</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-section">
-      <ul>
-      <h3>Documentation</h3>
-        <li><a href="#">Support</a></li>
-        <li><a href="#">Docs</a></li>
-        <li><a href="#">Status</a></li>
-        <li><a href="#">API Reference</a></li>
-        <li><a href="#">Tech Requirements</a></li>
-      </ul>
-    </div>
-     <div class="footer-section">
-      <ul>
-      <h3>Resources</h3>
-        <li><a href="#">Help</a></li>
-        <li><a href="#">Your Account</a></li>
-      </ul>
-    </div>
-    </div>
-  </div>
-</footer>
   </body>
 </html>
