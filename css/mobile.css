@@ -56,7 +56,7 @@
     font-size: 1.5rem;
   }
 
-  #rightPart {
+  #right {
     display: flex;
     flex-direction: column;
     width: 100%;

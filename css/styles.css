@@ -70,7 +70,7 @@ nav {
 }
 
 #navList a:hover {
-  color: #2476ff;
+  color: #ff00a2;
 }
 
 .navButton {
@@ -87,7 +87,7 @@ nav {
 }
 
 .navButton:hover {
-  color: #2476ff;
+  color: #ff00a2;
   background-color: white;
   border: 0.0625rem solid #2476ff;
   transition: 2s ease-in-out;
@@ -196,7 +196,7 @@ nav {
   color: #2476ff;
 }
 
-#rightPart {
+#right {
   display: flex;
   width: 45%;
   height: 25.375rem;
